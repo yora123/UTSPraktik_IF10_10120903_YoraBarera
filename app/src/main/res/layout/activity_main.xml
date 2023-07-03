@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Tgl Pengerjaan : 3 Juli 2023 -->
+<!-- NIM : 10120903    -->
+<!-- Nama : Yora Barera   -->
+<!-- Kelas : IF-10-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/porcelain">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_32dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Vimg1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0dp"
+            android:layout_margin="@dimen/_16dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvPelaksanaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            app:cardCornerRadius="@dimen/_12dp"
+            app:cardElevation="@dimen/_0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Vimg1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_32dp">
+
+                <TextView
+                    android:id="@+id/tvPelaksanaan"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_16dp"
+                    android:text="@string/Pelaksanaan"
+                    android:textAppearance="@style/TextAppearance.Roboto.Bold.Subtitle2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/cvDetail"
+                    app:layout_constraintEnd_toStartOf="@id/cvDetail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/cvDetail" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    app:cardBackgroundColor="@color/green_pastel"
+                    app:cardCornerRadius="@dimen/_32dp"
+                    app:cardElevation="@dimen/_0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_12dp"
+                        android:layout_marginVertical="@dimen/_6dp"
+                        android:drawableStart="@drawable/ic_detail"
+                        android:drawablePadding="@dimen/_8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/detail"
+                        android:textColor="@color/green_catil" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:id="@+id/vLine"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginStart="@dimen/_27dp"
+                    android:layout_marginTop="@dimen/_24dp"
+                    android:background="@color/green_catil"
+                    app:layout_constraintEnd_toStartOf="@id/ivCheck2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvDetail" />
+
+                <ImageView
+                    android:id="@+id/ivCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_check"
+                    app:layout_constraintBottom_toBottomOf="@id/vLine"
+                    app:layout_constraintStart_toStartOf="@id/vLine"
+                    app:layout_constraintTop_toTopOf="@id/vLine" />
+
+                <ImageView
+                    android:id="@+id/ivCheck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_39dp"
+                    android:background="@drawable/ic_unchecked"
+                    app:layout_constraintBottom_toBottomOf="@id/vLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/vLine" />
+
+                <View
+                    android:id="@+id/vLine2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_24dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivCheck2"
+                    app:layout_constraintTop_toBottomOf="@id/cvDetail" />
+
+                <ImageView
+                    android:id="@+id/ivPrepare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:src="@drawable/ic_prepare"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivCheck" />
+
+                <TextView
+                    android:id="@+id/tvPrepare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:text="@string/prepare"
+                    android:textAppearance="@style/TextAppearance.Roboto.Bold.Body2"
+                    app:layout_constraintStart_toEndOf="@id/ivPrepare"
+                    app:layout_constraintTop_toTopOf="@id/ivPrepare" />
+
+                <TextView
+                    android:id="@+id/tvDatePrepare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:text="@string/date_prepare"
+                    android:textAppearance="@style/TextAppearance.Roboto.Regular.Caption"
+                    android:textColor="@color/grey_3"
+                    app:layout_constraintStart_toEndOf="@id/ivPrepare"
+                    app:layout_constraintTop_toBottomOf="@id/tvPrepare" />
+
+                <ImageView
+                    android:id="@+id/ivFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:layout_marginEnd="@dimen/_27dp"
+                    android:src="@drawable/ic_file"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvPengumuman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            app:cardCornerRadius="@dimen/_12dp"
+            app:cardElevation="@dimen/_0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvPelaksanaan">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_9dp">
+
+                <ImageView
+                    android:id="@+id/ivSpeaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/ic_speaker"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvPengumuman"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:text="@string/pengumuman"
+                    android:textAppearance="@style/TextAppearance.Roboto.Bold.Subtitle2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivSpeaker" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvSma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    app:cardBackgroundColor="@color/green_pastel"
+                    app:cardCornerRadius="@dimen/_12dp"
+                    app:cardElevation="@dimen/_0dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvPengumuman">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/_12dp">
+
+                        <TextView
+                            android:id="@+id/tvAnda"
+                            style="@style/TextAppearance.Roboto.Regular.Caption"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12dp"
+                            android:drawablePadding="@dimen/_8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/diterima"
+                            android:textColor="@color/green_catil"
+                            app:layout_constraintBottom_toBottomOf="@id/cvDetail2"
+                            app:layout_constraintEnd_toStartOf="@id/cvDetail2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/cvDetail2" />
+
+                        <TextView
+                            android:id="@+id/tvNamaSekolah"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/sma_negeri"
+                            android:textColor="@color/semi_black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvAnda" />
+
+                        <TextView
+                            android:id="@+id/tvJalur"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jalur"
+                            app:layout_constraintStart_toStartOf="@id/tvNamaSekolah"
+                            app:layout_constraintTop_toBottomOf="@id/tvNamaSekolah" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cvDetail2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12dp"
+                            android:layout_marginEnd="@dimen/_16dp"
+                            app:cardBackgroundColor="@color/green_catil"
+                            app:cardCornerRadius="@dimen/_32dp"
+                            app:cardElevation="@dimen/_0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tvDetail2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/_12dp"
+                                android:layout_marginVertical="@dimen/_6dp"
+                                android:drawableStart="@drawable/ic_detail"
+                                android:drawablePadding="@dimen/_8dp"
+                                android:drawableTint="@color/white"
+                                android:gravity="center_vertical"
+                                android:text="@string/detail"
+                                android:textColor="@color/white" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvLayanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            app:cardCornerRadius="@dimen/_12dp"
+            app:cardElevation="@dimen/_0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvPengumuman">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_16dp">
+
+                <ImageView
+                    android:id="@+id/ivTopi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/ic_topi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvLayanan"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:text="@string/layanan_ppdb"
+                    android:textAppearance="@style/TextAppearance.Roboto.Bold.Subtitle2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivTopi" />
+
+                <TextView
+                    android:id="@+id/tvLoc"
+                    style="@style/TextAppearance.Roboto.Regular.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_6dp"
+                    android:drawableStart="@drawable/ic_loc"
+                    android:drawablePadding="@dimen/_8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/loc"
+                    android:textColor="@color/green_catil"
+                    app:layout_constraintStart_toStartOf="@id/tvLayanan"
+                    app:layout_constraintTop_toBottomOf="@id/tvLayanan" />
+
+                <ImageView
+                    android:id="@+id/ivInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/ic_info1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLoc" />
+
+                <TextView
+                    android:id="@+id/tvInfo1"
+                    style="@style/TextAppearance.Roboto.Regular.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/info_1"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/ivInfo1"
+                    app:layout_constraintStart_toEndOf="@id/ivInfo1"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo1" />
+
+                <ImageView
+                    android:id="@+id/ivChevron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivInfo1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo1" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivInfo1" />
+
+                <ImageView
+                    android:id="@+id/ivInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/ic_info2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line1" />
+
+                <TextView
+                    android:id="@+id/tvInfo2"
+                    style="@style/TextAppearance.Roboto.Regular.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/sosialisasi_ppdb"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/ivInfo2"
+                    app:layout_constraintStart_toEndOf="@id/ivInfo2"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo2" />
+
+                <ImageView
+                    android:id="@+id/ivChevron2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivInfo2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo2" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivInfo2" />
+
+                <ImageView
+                    android:id="@+id/ivInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/ic_info3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line2" />
+
+                <TextView
+                    android:id="@+id/tvInfo3"
+                    style="@style/TextAppearance.Roboto.Regular.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/pend_tahap_1"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/ivInfo3"
+                    app:layout_constraintStart_toEndOf="@id/ivInfo3"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo3" />
+
+                <ImageView
+                    android:id="@+id/ivChevron3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivInfo3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo3" />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivInfo3" />
+
+                <ImageView
+                    android:id="@+id/ivInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/ic_info4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line3" />
+
+                <TextView
+                    android:id="@+id/tvInfo4"
+                    style="@style/TextAppearance.Roboto.Regular.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/pengumuman_ppdb"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/ivInfo4"
+                    app:layout_constraintStart_toEndOf="@id/ivInfo4"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo4" />
+
+                <ImageView
+                    android:id="@+id/ivChevron4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivInfo4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo4" />
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivInfo4" />
+
+                <ImageView
+                    android:id="@+id/ivInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/ic_info5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line4" />
+
+                <TextView
+                    android:id="@+id/tvInfo5"
+                    style="@style/TextAppearance.Roboto.Regular.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/hotline"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/ivInfo5"
+                    app:layout_constraintStart_toEndOf="@id/ivInfo5"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo5" />
+
+                <ImageView
+                    android:id="@+id/ivChevron5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivInfo5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivInfo5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            app:cardCornerRadius="@dimen/_12dp"
+            app:cardElevation="@dimen/_0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvLayanan">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_16dp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <ImageView
+                    android:id="@+id/ivSpeaker2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/ic_speaker"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBerita"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:text="@string/berita_terkait_ppdb"
+                    android:textAppearance="@style/TextAppearance.Roboto.Bold.Subtitle2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivSpeaker2" />
+
+                <TextView
+                    android:id="@+id/tvDapatkan"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:layout_marginEnd="@dimen/_12dp"
+                    android:text="@string/dapatkan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tvBerita"
+                    app:layout_constraintTop_toBottomOf="@id/tvBerita" />
+
+                <View
+                    android:id="@+id/vNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_0dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:background="@drawable/bg_rounded"
+                    android:backgroundTint="@color/grey_2"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvPopular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDapatkan" />
+
+                <TextView
+                    android:id="@+id/tvPopular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:paddingBottom="@dimen/_16dp"
+                    android:text="@string/popular"
+                    app:layout_constraintEnd_toEndOf="@id/vNews"
+                    app:layout_constraintStart_toEndOf="@id/glNews"
+                    app:layout_constraintTop_toTopOf="@id/vNews" />
+
+                <View
+                    android:id="@+id/vNewest"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="@dimen/_0dp"
+                    android:layout_margin="@dimen/_4dp"
+                    android:background="@drawable/bg_rounded"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@id/vNews"
+                    app:layout_constraintEnd_toStartOf="@id/glNews"
+                    app:layout_constraintStart_toStartOf="@id/vNews"
+                    app:layout_constraintTop_toTopOf="@id/vNews" />
+
+                <TextView
+                    android:id="@+id/tvNewest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terbaru"
+                    style="@style/TextAppearance.Roboto.Medium.Body2"
+                    android:textColor="@color/green_catil"
+                    app:layout_constraintBottom_toBottomOf="@id/vNewest"
+                    app:layout_constraintEnd_toEndOf="@id/vNewest"
+                    app:layout_constraintStart_toStartOf="@id/vNewest"
+                    app:layout_constraintTop_toTopOf="@id/vNewest"
+                    android:drawableEnd="@drawable/ic_bulet"
+                    android:drawablePadding="@dimen/_12dp"
+                    android:gravity="center_vertical"/>
+
+
+                <ImageView
+                    android:id="@+id/ivImg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/img2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vNews" />
+
+                <TextView
+                    android:id="@+id/tvImg1"
+                    style="@style/TextAppearance.Roboto.Medium.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/news_1"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/ivImg1"
+                    app:layout_constraintTop_toTopOf="@id/ivImg1" />
+
+                <TextView
+                    android:id="@+id/tvSecImg1"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/pendidikan"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintStart_toStartOf="@id/tvImg1"
+                    app:layout_constraintTop_toBottomOf="@id/tvImg1" />
+
+                <TextView
+                    android:id="@+id/tvThrImg1"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_4dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/_15_jam_yang_lalu"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSecImg1"
+                    app:layout_constraintStart_toEndOf="@id/tvSecImg1"
+                    app:layout_constraintTop_toTopOf="@id/tvSecImg1" />
+
+                <ImageView
+                    android:id="@+id/ivChevronNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivImg1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivImg1" />
+
+                <View
+                    android:id="@+id/lineNews1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivImg1" />
+
+                <ImageView
+                    android:id="@+id/ivImg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/img2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineNews1" />
+
+                <TextView
+                    android:id="@+id/tvImg2"
+                    style="@style/TextAppearance.Roboto.Medium.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/persiapan_ppdb"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/ivImg2"
+                    app:layout_constraintTop_toTopOf="@id/ivImg2" />
+
+                <TextView
+                    android:id="@+id/tvSecImg2"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/pendidikan"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintStart_toStartOf="@id/tvImg2"
+                    app:layout_constraintTop_toBottomOf="@id/tvImg2" />
+
+                <TextView
+                    android:id="@+id/tvThrImg2"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_4dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/_4_juni"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSecImg2"
+                    app:layout_constraintStart_toEndOf="@id/tvSecImg2"
+                    app:layout_constraintTop_toTopOf="@id/tvSecImg2" />
+
+                <ImageView
+                    android:id="@+id/ivChevronNews2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivImg2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivImg2" />
+
+                <View
+                    android:id="@+id/lineNews2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivImg2" />
+
+                <ImageView
+                    android:id="@+id/ivImg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/img2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineNews2" />
+
+                <TextView
+                    android:id="@+id/tvImg3"
+                    style="@style/TextAppearance.Roboto.Medium.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/pelaksana_teknis"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/ivImg3"
+                    app:layout_constraintTop_toTopOf="@id/ivImg3" />
+
+                <TextView
+                    android:id="@+id/tvSecImg3"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/pendidikan"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintStart_toStartOf="@id/tvImg3"
+                    app:layout_constraintTop_toBottomOf="@id/tvImg3" />
+
+                <TextView
+                    android:id="@+id/tvThrImg3"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_4dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/_24_mei_2022"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSecImg3"
+                    app:layout_constraintStart_toEndOf="@id/tvSecImg3"
+                    app:layout_constraintTop_toTopOf="@id/tvSecImg3" />
+
+                <ImageView
+                    android:id="@+id/ivChevronNews3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivImg3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivImg3" />
+
+                <View
+                    android:id="@+id/lineNews3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivImg3" />
+
+                <ImageView
+                    android:id="@+id/ivImg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/img2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineNews3" />
+
+                <TextView
+                    android:id="@+id/tvImg4"
+                    style="@style/TextAppearance.Roboto.Medium.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/masih"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/ivImg4"
+                    app:layout_constraintTop_toTopOf="@id/ivImg4" />
+
+                <TextView
+                    android:id="@+id/tvSecImg4"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/pendidikan"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintStart_toStartOf="@id/tvImg4"
+                    app:layout_constraintTop_toBottomOf="@id/tvImg4" />
+
+                <TextView
+                    android:id="@+id/tvThrImg4"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_4dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/_24_mei_2022"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSecImg4"
+                    app:layout_constraintStart_toEndOf="@id/tvSecImg4"
+                    app:layout_constraintTop_toTopOf="@id/tvSecImg4" />
+
+                <ImageView
+                    android:id="@+id/ivChevronNews4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivImg4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivImg4" />
+
+                <View
+                    android:id="@+id/lineNews4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivImg4" />
+
+                <ImageView
+                    android:id="@+id/ivImg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/img2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineNews4" />
+
+                <TextView
+                    android:id="@+id/tvImg5"
+                    style="@style/TextAppearance.Roboto.Medium.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:text="@string/bupati"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/ivImg5"
+                    app:layout_constraintTop_toTopOf="@id/ivImg5" />
+
+                <TextView
+                    android:id="@+id/tvSecImg5"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_12dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/pendidikan"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintStart_toStartOf="@id/tvImg5"
+                    app:layout_constraintTop_toBottomOf="@id/tvImg5" />
+
+                <TextView
+                    android:id="@+id/tvThrImg5"
+                    style="@style/TextAppearance.Roboto.Medium.Caption"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_4dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:text="@string/_19_juli_2022"
+                    android:textColor="@color/grey_4"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSecImg5"
+                    app:layout_constraintStart_toEndOf="@id/tvSecImg5"
+                    app:layout_constraintTop_toTopOf="@id/tvSecImg5" />
+
+                <ImageView
+                    android:id="@+id/ivChevronNews5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivImg5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivImg5" />
+
+                <View
+                    android:id="@+id/lineNews5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:background="@color/grey_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivImg5" />
+
+                <TextView
+                    android:id="@+id/tvLihat"
+                    style="@style/TextAppearance.Roboto.Bold.Body2"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:drawablePadding="@dimen/_8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/lihat"
+                    android:textColor="@color/green_catil"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineNews5" />
+
+                <ImageView
+                    android:id="@+id/ivChevronNews6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_chevron"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvLihat"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLihat" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUp"
+            style="@style/roundedImageViewRounded"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_105dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_105dp"
+            android:layout_marginBottom="@dimen/_32dp"
+            android:backgroundTint="@color/white"
+            android:insetTop="@dimen/_0dp"
+            android:insetBottom="@dimen/_0dp"
+            android:text="@string/up"
+            android:textAllCaps="false"
+            android:textColor="@color/green_catil"
+            app:cornerRadius="@dimen/_44dp"
+            app:icon="@drawable/ic_up"
+            app:iconGravity="textStart"
+            app:iconTint="@color/green_catil"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvNews" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

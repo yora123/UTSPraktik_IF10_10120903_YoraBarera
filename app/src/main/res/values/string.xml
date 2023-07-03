@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">UTSPraktik_if10_10120918_DennieFuziAlviyanies</string>
+    <string name="Pelaksanaan">Pelaksanaan PPDB Tahap 1 - 2023</string>
+    <string name="detail">Detail</string>
+    <string name="prepare">Persiapan</string>
+    <string name="date_prepare">17 Mei - 05 Juni 2023</string>
+    <string name="newest">Terbaru</string>
+    <string name="popular">Terpopuler</string>
+    <string name="pengumuman">Pengumuman Hasil Seleksi</string>
+    <string name="diterima">Anda dinyatakan diterima di</string>
+    <string name="sma_negeri">SMA Negeri 1 Bojonggede</string>
+    <string name="jalur">Jalur Prestasi Kejuaraan</string>
+    <string name="layanan_ppdb">Layanan PPDB</string>
+    <string name="loc">Kota Bandung</string>
+    <string name="info_1">Info Sekolah PPDB</string>
+    <string name="sosialisasi_ppdb">Sosialisasi PPDB</string>
+    <string name="pend_tahap_1">Pendaftaran PPDB Tahap 1</string>
+    <string name="pengumuman_ppdb">Pengumuman PPDB Tahap 1</string>
+    <string name="hotline">Hotline</string>
+    <string name="berita_terkait_ppdb">Berita Terkait PPDB</string>
+    <string name="dapatkan">Dapatkan semua informasi terbaru dan terpopuler terkait PPDB</string>
+    <string name="terbaru">Terbaru</string>
+    <string name="news_1">PPDB SMA/ SMK 2022, Ridwan\nKamil: PPDB di Jawa Barat...</string>
+    <string name="pendidikan">Pendidikan  • </string>
+    <string name="_4_juni">4 Juni 2022</string>
+    <string name="lihat">Lihat semua berita</string>
+    <string name="up">Kembali ke atas</string>
+    <string name="persiapan_ppdb">Persiapan PPDB Jabar Tahun\n2021 Sudah Matang</string>
+    <string name="pelaksana_teknis">Pelaksana Teknis PPDB Harus\nEvaluasi Diri</string>
+    <string name="masih">Masih ditemukan \'Blank Spot\'\ndalam Proses PPDB Kabupaten</string>
+    <string name="bupati">Bupati Purwakarta Hadiri\nPembukaan Masa Pengenalan</string>
+    <string name="_15_jam_yang_lalu">15 jam yang lalu</string>
+    <string name="_24_mei_2022">24 Mei 2022</string>
+    <string name="_19_juli_2022">19 Juli 2022</string>
+</resources>
